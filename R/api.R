@@ -10,7 +10,7 @@ cfg <- function() {
 
   if (Sys.getenv("SEMANTICSCHOLAR_API") != "") {
     res$S2_key <- Sys.getenv("SEMANTICSCHOLAR_API")
-    res$S2_api <- "https://partner.semanticscholar.org/"
+    res$S2_api <- "https://api.semanticscholar.org/"
     res$S2_ratelimit <- 1 / (100 - 1) # for approx 100 requests per second
   }
 
